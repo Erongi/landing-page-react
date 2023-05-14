@@ -1,0 +1,33 @@
+.container-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-con:first-child,
+.container-con:last-child {
+    padding: 5rem 0;
+}
+
+.content-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(14, 212, 90, 0.35) 10px 10px 15px;
+}
+
+.content-desc {
+    padding: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .container-con {
+        flex-direction: column;
+    }
+
+    .container-con:nth-child(even) .content-desc {
+        order: 1
+    }
+
+    .content-img {
+        padding: 0 2rem;
+    }
+}
