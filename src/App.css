@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Punch";
+  src: url("./fonts/Kanit-ExtraLightItalic.ttf") format("truetype");
+}
+
 body {
   margin: 0;
+  font-family: "Punch";
 }
 
 .container {
